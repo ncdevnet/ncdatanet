@@ -34,46 +34,40 @@
          "preset":"dataset_organization"
       },
       {
-         "field_name":"brands",
-         "label":"Brands",
-         "preset": "multiple_checkbox",
-         "choices": [
-            {
-               "value": "MarketWatch",
-               "label": "MarketWatch"
-            },
-            {
-               "value": "WSJ",
-               "label": "WSJ"
-            }
-         ]
+         "field_name":"volume",
+         "label":"Volume",
+         "form_snippet":"markdown.html",
+         "form_placeholder":"eg. Indicative volume and type of data"
       },
       {
-         "field_name":"url",
-         "label":"Source",
-         "form_placeholder":"http://example.com/dataset.json",
-         "display_property":"foaf:homepage",
-         "display_snippet":"link.html"
+         "field_name":"history",
+         "label":"History",
+         "form_snippet":"markdown.html",
+         "form_placeholder":"eg. Indicative information about amount of history available"
       },
       {
-         "field_name":"version",
-         "label":"Version",
-         "validators":"ignore_missing unicode package_version_validator",
-         "form_placeholder":"1.0"
+         "field_name":"Fields",
+         "label":"fields",
+         "form_snippet":"markdown.html",
+         "form_placeholder":"eg. Which fields are included (and are not)"
       },
       {
-         "field_name":"author",
-         "label":"Author",
-         "form_placeholder":"Joe Bloggs",
-         "display_property":"dc:creator"
+         "field_name":"identity",
+         "label":"Identity",
+         "form_snippet":"markdown.html",
+         "form_placeholder":"eg. Supported identity keys"
       },
       {
-         "field_name":"author_email",
-         "label":"Author Email",
-         "form_placeholder":"joe@example.com",
-         "display_property":"dc:creator",
-         "display_snippet":"email.html",
-         "display_email_name_field":"author"
+         "field_name":"policy",
+         "label":"Policy",
+         "form_snippet":"markdown.html",
+         "form_placeholder":"eg. Usage policy"
+      },
+      {
+         "field_name":"caveats",
+         "label":"Caveats",
+         "form_snippet":"markdown.html",
+         "form_placeholder":"eg. Any notes, warnings etc."
       },
       {
          "field_name":"maintainer",
